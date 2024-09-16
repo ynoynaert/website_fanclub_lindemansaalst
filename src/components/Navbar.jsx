@@ -16,9 +16,13 @@ export default function Navbar() {
         {/* Left Button Group */}
         <Flex flex="1" justify="flex-start"> {/* Added ml="4" for extra margin on the left */}
           <ButtonGroup gap="2">
-            <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>Home</Button>
-            <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>Over ons</Button>
-            <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>Kalender</Button>
+          <Button as={Link} href="/" background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>
+            Home
+          </Button>
+          <Button as={Link} href="/overons" background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>
+            Over ons
+          </Button>
+          <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>Kalender</Button>
             <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>'t Blocknotjen</Button>
             <Button background="transparent" color="#f08515" _hover={{ background: "#f08515", color: "white" }}>Foto's</Button>
           </ButtonGroup>

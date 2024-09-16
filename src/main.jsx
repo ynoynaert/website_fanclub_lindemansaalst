@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Home />,
       },
+      {
+        path: "/overons",
+        element: <AboutUs />
+      }
     ],
   },
 ]);
