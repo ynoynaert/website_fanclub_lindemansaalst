@@ -10,9 +10,9 @@ export default function AboutUs() {
       </Flex>
       <Flex mb={4} align="center">
         <Image
-          src="/images/y9DpT.jpg"
+          src="/images/overOns/overOns_1.jpg"
           alt="Welkom afbeelding"
-          boxSize="100px"
+          boxSize="175px"
           objectFit="cover"
           mr={4}
         />
@@ -35,7 +35,7 @@ export default function AboutUs() {
           verbonden voelen met Lindemans Aalst.
         </Text>
         <Image
-          src="/images/y9DpT.jpg"
+          src="/images/overOns/overOns_2.jpg"
           alt="Doel afbeelding"
           boxSize="200px"
           objectFit="cover"
@@ -44,9 +44,9 @@ export default function AboutUs() {
       </Flex>
       <Flex mb={4} align="center">
         <Image
-          src="/images/y9DpT.jpg"
+          src="/images/overOns/overOns_3.jpg"
           alt="Blijf op de hoogte afbeelding"
-          boxSize="100px"
+          boxSize="175px"
           objectFit="cover"
           mr={4}
         />
