@@ -21,7 +21,7 @@ export default function Error({ error }) {
         textAlign="center"
         height="200px"
       >
-        <AlertIcon boxSize='40px' mr={0} />
+        <AlertIcon boxSize="40px" mr={0} />
         <Box>
           <AlertTitle>Something went wrong!</AlertTitle>
           <AlertDescription>
