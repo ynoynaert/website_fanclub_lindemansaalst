@@ -87,6 +87,8 @@ export default function Navbar() {
               Kalender
             </Button>
             <Button
+              as={Link}
+              href="/blocknotjen"
               background="transparent"
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
@@ -94,6 +96,8 @@ export default function Navbar() {
               't Blocknotjen
             </Button>
             <Button
+              as={Link}
+              href="/fotos"
               background="transparent"
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
@@ -181,6 +185,8 @@ export default function Navbar() {
             Kalender
           </Button>
           <Button
+            as={Link}
+            href="/blocknotjen"
             background="transparent"
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
@@ -188,6 +194,8 @@ export default function Navbar() {
             't Blocknotjen
           </Button>
           <Button
+            as={Link}
+            href="/fotos"
             background="transparent"
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}

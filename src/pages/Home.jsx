@@ -15,6 +15,7 @@ export default function Home() {
             "Op zaterdag 28 en zondag 29 gaat Levensloop door in het stadspark van Aalst. Ook met de (fan)club nemen we hieraan deel."
           }
           but={"Meer info"}
+          butLink={"/levensloop"}
         />
       </Box>
 
@@ -29,6 +30,7 @@ export default function Home() {
             "Jaarlijks sluiten we het seizoen af met de uitreiking van prijzen beste speler, beste jongere, meest enthousiaste speler en Lifetime Achievement Award."
           }
           but={"Ontdek de winnaars"}
+          butLink={"/goudenkriekskes"}
         />
       </Box>
 
@@ -43,6 +45,7 @@ export default function Home() {
             "We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het seizoen verschijnt dit 1 keer per maand."
           }
           but={"Lees online"}
+          butLink={"/blocknotjen"}
         />
       </Box>
 
