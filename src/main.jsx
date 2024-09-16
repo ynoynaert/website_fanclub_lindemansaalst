@@ -1,10 +1,43 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ChakraProvider, extendTheme , ColorModeScript } from "@chakra-ui/react";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import {
+  Navigate,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home.jsx";
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Navigate replace to="/home" />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+    ],
+  },
+]);
+
+const theme = extendTheme({
+  config: {
+    initialColorMode: "dark", // or 'light'
+    useSystemColorMode: false,
+  },
+});
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+      <ChakraProvider theme={theme}>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <RouterProvider router={router} />
+      </ChakraProvider>
+  </React.StrictMode>,
+);
