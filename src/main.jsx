@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ChakraProvider, extendTheme, ColorModeScript } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import {
   Navigate,
@@ -56,17 +56,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-const theme = extendTheme({
-  config: {
-    initialColorMode: "light", // or 'light'
-    useSystemColorMode: false,
-  },
-});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    <ChakraProvider>
       <RouterProvider router={router} />
     </ChakraProvider>
   </React.StrictMode>
