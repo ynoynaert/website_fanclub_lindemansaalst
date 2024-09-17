@@ -98,7 +98,8 @@ export default function Navbar() {
             </Button>
             <Button
               as={Link}
-              href="/fotos"
+              href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
+              isExternal
               background="transparent"
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
@@ -126,7 +127,10 @@ export default function Navbar() {
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
             >
-              <Link href="https://www.facebook.com/fanclub.lindemans.aalst"  isExternal>
+              <Link
+                href="https://www.facebook.com/fanclub.lindemans.aalst"
+                isExternal
+              >
                 <Icon as={IoLogoFacebook} />
               </Link>
             </Button>
@@ -135,7 +139,10 @@ export default function Navbar() {
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
             >
-              <Link href="https://www.instagram.com/fanclub_lindemans_aalst"  isExternal>
+              <Link
+                href="https://www.instagram.com/fanclub_lindemans_aalst"
+                isExternal
+              >
                 <Icon as={IoLogoInstagram} />
               </Link>
             </Button>
@@ -197,7 +204,8 @@ export default function Navbar() {
           </Button>
           <Button
             as={Link}
-            href="/fotos"
+            href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
+            isExternal
             background="transparent"
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
@@ -209,7 +217,10 @@ export default function Navbar() {
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
           >
-            <Link href="https://www.facebook.com/fanclub.lindemans.aalst"  isExternal>
+            <Link
+              href="https://www.facebook.com/fanclub.lindemans.aalst"
+              isExternal
+            >
               <Icon as={IoLogoFacebook} />
             </Link>
           </Button>
@@ -218,7 +229,10 @@ export default function Navbar() {
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
           >
-            <Link href="https://www.instagram.com/fanclub_lindemans_aalst"  isExternal>
+            <Link
+              href="https://www.instagram.com/fanclub_lindemans_aalst"
+              isExternal
+            >
               <Icon as={IoLogoInstagram} />
             </Link>
           </Button>
