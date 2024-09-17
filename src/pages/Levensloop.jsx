@@ -111,7 +111,7 @@ export default function Levensloop() {
 
       <Text mb={4}>
         <Link
-          href="https://www.levensloop.be/teams/lindemans-aalst."
+          href="https://www.levensloop.be/teams/lindemans-aalst"
           color="#f08515"
           isExternal
         >
