@@ -82,6 +82,7 @@ export default function Navbar() {
               href="https://www.lindemansaalst.be/calendar.php#competitie"
               background="transparent"
               color="#f08515"
+              isExternal
               _hover={{ background: "#f08515", color: "white" }}
             >
               Kalender
@@ -125,7 +126,7 @@ export default function Navbar() {
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
             >
-              <Link href="https://www.facebook.com/fanclub.lindemans.aalst">
+              <Link href="https://www.facebook.com/fanclub.lindemans.aalst"  isExternal>
                 <Icon as={IoLogoFacebook} />
               </Link>
             </Button>
@@ -134,7 +135,7 @@ export default function Navbar() {
               color="#f08515"
               _hover={{ background: "#f08515", color: "white" }}
             >
-              <Link href="https://www.instagram.com/fanclub_lindemans_aalst">
+              <Link href="https://www.instagram.com/fanclub_lindemans_aalst"  isExternal>
                 <Icon as={IoLogoInstagram} />
               </Link>
             </Button>
@@ -180,6 +181,7 @@ export default function Navbar() {
             href="https://www.lindemansaalst.be/calendar.php#competitie"
             background="transparent"
             color="#f08515"
+            isExternal
             _hover={{ background: "#f08515", color: "white" }}
           >
             Kalender
@@ -207,7 +209,7 @@ export default function Navbar() {
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
           >
-            <Link href="https://www.facebook.com/fanclub.lindemans.aalst">
+            <Link href="https://www.facebook.com/fanclub.lindemans.aalst"  isExternal>
               <Icon as={IoLogoFacebook} />
             </Link>
           </Button>
@@ -216,7 +218,7 @@ export default function Navbar() {
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
           >
-            <Link href="https://www.instagram.com/fanclub_lindemans_aalst">
+            <Link href="https://www.instagram.com/fanclub_lindemans_aalst"  isExternal>
               <Icon as={IoLogoInstagram} />
             </Link>
           </Button>

@@ -1,6 +1,6 @@
 import { Box, Button, Image, Text, Heading, Flex } from "@chakra-ui/react";
 
-const CardRow = ({ img, imgalt, imgsize, title, desc, but, butLink }) => {
+const CardRow = ({ img, imgalt, imgsize, title, desc, but, butLink, isExternal }) => {
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
@@ -40,6 +40,8 @@ const CardRow = ({ img, imgalt, imgsize, title, desc, but, butLink }) => {
             alignSelf="flex-start" // Optional: adjust alignment if needed
             as="a"
             href={butLink}
+            target={isExternal ? "_blank" : "_self"} // Open external links in a new tab
+            rel={isExternal ? "noopener noreferrer" : ""} // Add rel for security
             _hover={{ background: "white", color: "#f08515" }}
           >
             {but}

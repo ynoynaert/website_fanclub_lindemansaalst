@@ -49,7 +49,7 @@ export default function Home() {
         />
       </Box>
 
-      {/* Lindemans Aalst Website */}
+      {/* Lindemans Aalst Website - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
           img={"/images/home/website-lindemans-aalst.png"}
@@ -58,10 +58,11 @@ export default function Home() {
           desc={"Meer informatie over onze club vind je op deze website."}
           but={"Meer info"}
           butLink={"https://www.lindemansaalst.be"}
+          isExternal={true} // This is an external link
         />
       </Box>
 
-      {/* Lotto Volley League */}
+      {/* Lotto Volley League - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
           img={"/images/home/website-volley-league.png"}
@@ -72,10 +73,11 @@ export default function Home() {
           }
           but={"Meer info"}
           butLink={"https://lottovolleyleague.be/nl/"}
+          isExternal={true} // This is an external link
         />
       </Box>
 
-      {/* CEV */}
+      {/* CEV - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
           img={"/images/home/website-cev.png"}
@@ -85,9 +87,8 @@ export default function Home() {
             "Informatie over de Europese wedstrijden kan je hier terugvinden."
           }
           but={"Meer info"}
-          butLink={
-            "https://www.cev.eu/club/volleyball-cup/2025/men/#competition"
-          }
+          butLink={"https://www.cev.eu/club/volleyball-cup/2025/men/#competition"}
+          isExternal={true} // This is an external link
         />
       </Box>
 
@@ -100,6 +101,7 @@ export default function Home() {
           title={"Clubgeschiedenis"}
           desc={"Lindemans Aalst is een club met een rijke geschiedenis."}
           but={"Lees de geschiedenis"}
+          butLink={"/clubgeschiedenis"}
         />
       </Box>
     </Flex>

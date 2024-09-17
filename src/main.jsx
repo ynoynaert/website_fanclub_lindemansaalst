@@ -14,6 +14,7 @@ import Levensloop from "./pages/Levensloop.jsx";
 import GoudenKriekskes from "./pages/GoudenKriekskes.jsx";
 import Blocknotjen from "./pages/Blocknotjen.jsx";
 import Fotos from "./pages/Fotos.jsx";
+import ClubGeschiedenis from "./pages/Clubgeschiedenis.jsx";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         path: "/fotos",
         element: <Fotos />,
       },
+      {
+        path: "/clubgeschiedenis",
+        element: <ClubGeschiedenis />,
+      }
     ],
   },
 ]);

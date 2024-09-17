@@ -1,17 +1,16 @@
-import { Box, Text, Flex, Image } from "@chakra-ui/react";
+import { Box, Text, Flex, Image, Heading } from "@chakra-ui/react";
 
 export default function AboutUs() {
   return (
-    <Box p={4} maxW="800px" mx="auto">
-      <Flex mb={4} align="center">
-        <Text fontSize="2xl" fontWeight="bold">
-          Over ons
-        </Text>
-      </Flex>
+    <Box p={4} maxW="container.md" mx="auto">
+      <Heading as="h1" size="lg" mb={4} textAlign="center">
+        Over ons
+      </Heading>
+
       <Flex mb={4} align="center">
         <Image
           src="/images/overOns/overOns_1.jpg"
-          alt="Welkom afbeelding"
+          alt="Fanclub afbeelding"
           boxSize="175px"
           objectFit="cover"
           mr={4}
@@ -30,13 +29,13 @@ export default function AboutUs() {
           versterken. We organiseren regelmatig bijeenkomsten, evenementen en
           activiteiten die niet alleen gericht zijn op het steunen van onze
           favoriete club, maar ook op het versterken van de gemeenschap rondom
-          de club. Van fan-days en meet-and-greets tot gezellige uitjes en
-          gezamenlijke wedstrijden, we zorgen ervoor dat onze leden zich altijd
-          verbonden voelen met Lindemans Aalst.
+          de club. Van gezellige uitjes om gezamenlijke de wedstrijden bekijken
+          tot een drankje na de match, we zorgen ervoor dat onze leden zich
+          altijd verbonden voelen met Lindemans Aalst.
         </Text>
         <Image
           src="/images/overOns/overOns_2.jpg"
-          alt="Doel afbeelding"
+          alt="Fanclub afbeelding"
           boxSize="200px"
           objectFit="cover"
           mr={4}
@@ -45,7 +44,7 @@ export default function AboutUs() {
       <Flex mb={4} align="center">
         <Image
           src="/images/overOns/overOns_3.jpg"
-          alt="Blijf op de hoogte afbeelding"
+          alt="Fanclub afbeelding"
           boxSize="175px"
           objectFit="cover"
           mr={4}

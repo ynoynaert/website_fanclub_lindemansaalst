@@ -3,7 +3,7 @@ import { Text, Link, UnorderedList, ListItem, Box, Heading } from "@chakra-ui/re
 export default function Levensloop() {
   return (
     <Box p={4} maxW="container.md" mx="auto">
-      <Heading as="h1" size="lg" mb={4}>
+      <Heading as="h1" size="lg" mb={4} textAlign="center">
         Doe mee aan Levensloop op 28 en 29 september 2024
       </Heading>
 
