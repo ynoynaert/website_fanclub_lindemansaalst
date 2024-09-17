@@ -58,7 +58,7 @@ const router = createBrowserRouter([
 
 const theme = extendTheme({
   config: {
-    initialColorMode: "dark", // or 'light'
+    initialColorMode: "light", // or 'light'
     useSystemColorMode: false,
   },
 });

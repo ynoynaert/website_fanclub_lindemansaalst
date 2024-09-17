@@ -53,28 +53,28 @@ export default function ClubGeschiedenis() {
 
         <Grid templateColumns="repeat(2, 1fr)" gap={4}>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/1984-1985-beker.jpg"} alt={"1984-1985 beker"} />
+            <Image src={"/src/assets/clubgeschiedenis/1984-1985-beker.jpg"} alt={"1984-1985 beker"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/1986-1987-kampioen.jpg"} alt={"1986-1987 kampioen"} />
+            <Image src={"/src/assets/clubgeschiedenis/1986-1987-kampioen.jpg"} alt={"1986-1987 kampioen"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/1987-1988-kampioen.jpg"} alt={"1987-1988 kampioen"} />
+            <Image src={"/src/assets/clubgeschiedenis/1987-1988-kampioen.jpg"} alt={"1987-1988 kampioen"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/1991-1992-beker.jpg"} alt={"1991-1992 beker"} />
+            <Image src={"/src/assets/clubgeschiedenis/1991-1992-beker.jpg"} alt={"1991-1992 beker"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/1992-1993-beker.jpg"} alt={"1992-1993 beker"} />
+            <Image src={"/src/assets/clubgeschiedenis/1992-1993-beker.jpg"} alt={"1992-1993 beker"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/2014-2015-beker.jpg"} alt={"2014-2015 beker"} />
+            <Image src={"/src/assets/clubgeschiedenis/2014-2015-beker.jpg"} alt={"2014-2015 beker"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/2015-2016-supercup.jpg"} alt={"2015-2016 supercup"} />
+            <Image src={"/src/assets/clubgeschiedenis/2015-2016-supercup.jpg"} alt={"2015-2016 supercup"} />
           </GridItem>
           <GridItem>
-            <Image src={"/images/clubgeschiedenis/2019-2020-eerste-plaats.jpg"} alt={"2019-2020 eerste plaats"} />
+            <Image src={"/src/assets/clubgeschiedenis/2019-2020-eerste-plaats.jpg"} alt={"2019-2020 eerste plaats"} />
           </GridItem>
         </Grid>
       </Box>
