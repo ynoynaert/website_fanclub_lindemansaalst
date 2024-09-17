@@ -25,7 +25,9 @@ export default function Navbar() {
       py={{ base: "2", md: "4", xl: "4" }} // Increased padding for larger screens
       bg="#f9f9f9"
       borderBottom="1px solid #ddd"
-      position="relative"
+      position="sticky"  // Make navbar sticky
+      top="0"  // Stick to the top
+      zIndex="1000"  // Ensure it sits on top of other content
     >
       {/* Mobile, Tablet & Medium Screens Navbar Toggle Button */}
       <Flex
@@ -98,7 +100,7 @@ export default function Navbar() {
             </Button>
             <Button
               as={Link}
-              href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
+              href="https://www.facebook.com/fanclub.lindemans.aalst/photos_albums"
               isExternal
               background="transparent"
               color="#f08515"
@@ -148,6 +150,8 @@ export default function Navbar() {
             </Button>
             <Button
               background="#f08515"
+              as={Link}
+              href="/contact"
               color="white"
               _hover={{ background: "white", color: "#f08515" }}
             >
@@ -204,7 +208,7 @@ export default function Navbar() {
           </Button>
           <Button
             as={Link}
-            href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
+            href="https://www.facebook.com/fanclub.lindemans.aalst/photos_albums"
             isExternal
             background="transparent"
             color="#f08515"
@@ -238,6 +242,8 @@ export default function Navbar() {
           </Button>
           <Button
             background="#f08515"
+            as={Link}
+            href="/contact"
             color="white"
             _hover={{ background: "white", color: "#f08515" }}
           >
