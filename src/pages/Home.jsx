@@ -7,7 +7,7 @@ export default function Home() {
       {/* Levensloop Card */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/levensloop2024.jpg"}
+          img={"/images/home/levensloop2024.jpg"}
           imgalt={"Levensloop"}
           imgsize={{ base: "100%", md: "350px" }} // Responsive image size
           title={"Levensloop 2024"}
@@ -22,7 +22,7 @@ export default function Home() {
       {/* Gouden Kriekskes Card */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/gouden-kriekskes-afbeelding.jpg"}
+          img={"/images/home/gouden-kriekskes-afbeelding.jpg"}
           imgalt={"Gouden Kriekskes"}
           imgsize={{ base: "100%", md: "450px" }} // Responsive image size
           title={"Gouden Kriekskes 2024"}
@@ -37,7 +37,7 @@ export default function Home() {
       {/* Blocknotjen Card */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/021-2024-mei.jpg"}
+          img={"/images/home/021-2024-mei.jpg"}
           imgalt={"Blocknotjen"}
           imgsize={{ base: "100%", md: "200px" }} // Responsive image size
           title={"'t Blocknotjen"}
@@ -52,7 +52,7 @@ export default function Home() {
       {/* Lindemans Aalst Website - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/website-lindemans-aalst.png"}
+          img={"/images/home/website-lindemans-aalst.png"}
           imgalt={"Website Lindemans Aalst"}
           imgsize={{ base: "100%", md: "200px" }} // Responsive image size
           desc={"Meer informatie over onze club vind je op deze website."}
@@ -65,7 +65,7 @@ export default function Home() {
       {/* Lotto Volley League - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/website-volley-league.png"}
+          img={"/images/home/website-volley-league.png"}
           imgalt={"Website Lotto Volley League"}
           imgsize={{ base: "100%", md: "250px" }} // Responsive image size
           desc={
@@ -80,7 +80,7 @@ export default function Home() {
       {/* CEV - External Link */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/website-cev.png"}
+          img={"/images/home/website-cev.png"}
           imgalt={"Website CEV"}
           imgsize={{ base: "100%", md: "150px" }} // Responsive image size
           desc={
@@ -95,7 +95,7 @@ export default function Home() {
       {/* Club History */}
       <Box maxW="60%" width="100%" mb={4}>
         <CardRow
-          img={"/src/assets/home/clubgeschiedenis.jpg"}
+          img={"/images/home/clubgeschiedenis.jpg"}
           imgalt={"Clubgeschiedenis"}
           imgsize={{ base: "100%", md: "300px" }} // Responsive image size
           title={"Clubgeschiedenis"}

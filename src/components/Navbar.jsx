@@ -41,7 +41,7 @@ export default function Navbar() {
         />
         <Box>
           <Image
-            src="/src/assets/logo.jpg"
+            src="/images/logo.jpg"
             alt="Logo Fanclub Lindemans Aalst"
             borderRadius="full"
             boxSize="50px"
@@ -111,7 +111,7 @@ export default function Navbar() {
         {/* Center Logo */}
         <Box position="absolute" left="50%" transform="translateX(-50%)" p="2">
           <Image
-            src="/src/assets/logo.jpg"
+            src="/images/logo.jpg"
             alt="Logo Fanclub Lindemans Aalst"
             borderRadius="full"
             boxSize="100px"

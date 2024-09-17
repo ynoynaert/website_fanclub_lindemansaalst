@@ -9,7 +9,7 @@ export default function AboutUs() {
 
       <Flex mb={4} align="center">
         <Image
-          src="/src/assets/overOns/overOns_1.jpg"
+          src="/images/overOns/overOns_1.jpg"
           alt="Fanclub afbeelding"
           boxSize="175px"
           objectFit="cover"
@@ -34,7 +34,7 @@ export default function AboutUs() {
           altijd verbonden voelen met Lindemans Aalst.
         </Text>
         <Image
-          src="/src/assets/overOns/overOns_2.jpg"
+          src="/images/overOns/overOns_2.jpg"
           alt="Fanclub afbeelding"
           boxSize="200px"
           objectFit="cover"
@@ -43,7 +43,7 @@ export default function AboutUs() {
       </Flex>
       <Flex mb={4} align="center">
         <Image
-          src="/src/assets/overOns/overOns_3.jpg"
+          src="/images/overOns/overOns_3.jpg"
           alt="Fanclub afbeelding"
           boxSize="175px"
           objectFit="cover"
