@@ -3,7 +3,7 @@ import { Box, Button, Image, Text, Heading, Flex } from "@chakra-ui/react";
 const CardRow = ({ img, imgalt, imgsize, title, desc, but, butLink, isExternal }) => {
   return (
     <Flex
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column", xl: "row" }} // Switch to row layout on screens wider than 1280px
       w="100%"
       borderWidth="1px"
       borderRadius="lg"
@@ -17,8 +17,8 @@ const CardRow = ({ img, imgalt, imgsize, title, desc, but, butLink, isExternal }
 
       {/* Content Box */}
       <Box
-        mt={{ base: 4, md: 0 }}
-        ml={{ md: 6 }}
+        mt={{ base: 4, xl: 0 }} // Adjust margin top for larger screens
+        ml={{ xl: 6 }} // Add margin-left only for larger screens
         flex="1"
         display="flex"
         flexDirection="column"

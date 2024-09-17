@@ -22,14 +22,14 @@ export default function Navbar() {
       direction="column"
       width="100%"
       px="4"
-      py={{ base: "2", md: "4" }} // Increase padding in desktop mode
+      py={{ base: "2", md: "4", xl: "4" }} // Increased padding for larger screens
       bg="#f9f9f9"
       borderBottom="1px solid #ddd"
       position="relative"
     >
-      {/* Mobile Navbar Toggle Button */}
+      {/* Mobile, Tablet & Medium Screens Navbar Toggle Button */}
       <Flex
-        display={{ base: "flex", md: "none" }}
+        display={{ base: "flex", md: "flex", xl: "none" }} // Adjust to show hamburger for xl (1280px) and below
         justify="space-between"
         align="center"
       >
@@ -49,12 +49,12 @@ export default function Navbar() {
         </Box>
       </Flex>
 
-      {/* Desktop Navbar */}
+      {/* Desktop Navbar for Screens Larger than 1280px */}
       <Flex
-        display={{ base: "none", md: "flex" }}
+        display={{ base: "none", xl: "flex" }} // Shows only for screens wider than 1280px
         alignItems="center"
         justifyContent="space-between"
-        minHeight="90px" // Set minimum height for the navbar in desktop mode
+        minHeight="90px"
       >
         {/* Left Button Group */}
         <Flex flex="1" justify="flex-start">
@@ -157,13 +157,13 @@ export default function Navbar() {
         </Flex>
       </Flex>
 
-      {/* Mobile Navbar */}
+      {/* Mobile & Medium Screens Navbar Menu */}
       <Collapse in={isOpen}>
         <VStack
           spacing="4"
           align="stretch"
           p="4"
-          display={{ base: "flex", md: "none" }}
+          display={{ base: "flex", md: "flex", xl: "none" }} // Menu visible on screens up to 1280px
         >
           <Button
             as={Link}
