@@ -17,18 +17,28 @@ export default function Blocknotjen() {
   return (
     <>
       <Box p={4} maxW="container.md" mx="auto">
-        <Flex mb={4} align="center">
-          <Box>
-            <Heading as="h1" size="lg" mb={4} textAlign="center">
+        <Flex
+          direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
+          align="center"
+          mb={4}
+          gap={{ base: 4, md: 8 }} // Add spacing between the elements
+        >
+          <Box flex="1">
+            <Heading
+              as="h1"
+              size="lg"
+              mb={4}
+              textAlign={{ base: "center", md: "left" }}
+            >
               Ledenblad 't Blocknotjen
             </Heading>
 
-            <Text>
+            <Text mb={4}>
               We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het
               seizoen verschijnt dit 1 keer per maand.
             </Text>
 
-            <Text>
+            <Text mb={4}>
               Afgedrukt (bij wedstrijd) en online:
               <UnorderedList>
                 <ListItem>Oktober</ListItem>
@@ -45,12 +55,11 @@ export default function Blocknotjen() {
               </UnorderedList>
             </Text>
 
-            <Text>
+            <Text mb={4}>
               Gezocht: sponsers. Dankzij onze sponsors kunnen wij 't Blocknotjen
               af en toe afgedrukt bezorgen aan de fans. Interesse om te
               sponsoren? Vraag meer informatie aan{" "}
               <Link href="mailto:hans@fanclubaalst.be" color="#f08515">
-                {" "}
                 Hans
               </Link>
               .
@@ -68,9 +77,13 @@ export default function Blocknotjen() {
             </Text>
           </Box>
 
-          <Box>
+          <Box flex="1" mt={{ base: 4, md: 0 }} mx={{ base: "auto", md: 0 }}>
             <Link href={archiveItems[0].pdfLink} isExternal>
-              <Card h="auto" maxW="sm">
+              <Card
+                h={{ base: "auto", md: "auto" }} // Set height for larger screens
+                maxW={{ base: "100%", sm: "sm", md: "md", lg: "lg" }} // Set maximum width responsively
+                mx={{ base: "auto", md: 0 }} 
+              >
                 <CardBody
                   display="flex"
                   flexDirection="column"
@@ -102,7 +115,7 @@ export default function Blocknotjen() {
           {archiveItems.map((item, index) => (
             <GridItem key={index} w="auto" h="auto">
               <Link href={item.pdfLink} isExternal>
-                <Card h="auto" maxW="sm">
+                <Card h="auto" maxW="sm" variant="filled">
                   <CardBody
                     display="flex"
                     flexDirection="column"

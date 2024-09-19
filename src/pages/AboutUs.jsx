@@ -7,13 +7,19 @@ export default function AboutUs() {
         Over ons
       </Heading>
 
-      <Flex mb={4} align="center">
+      <Flex
+        mb={4}
+        direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
+        align={{ base: "flex-start", md: "center" }} // Align to flex-start on mobile, center on larger screens
+      >
         <Image
           src="/images/overOns/overOns_1.jpg"
           alt="Fanclub afbeelding"
-          boxSize="175px"
+          boxSize={{base: "70%", md:"35%"}}
           objectFit="cover"
-          mr={4}
+          mb={{ base: 4, md: 0 }} // Bottom margin on mobile, none on desktop
+          mr={{ base: 0, md: { lg: 3, xl: 3 } }} // Right margin on desktop only (larger screens have more space)
+          mx={{ base: "auto", md: 0 }} // Center image on mobile
         />
         <Text fontSize="lg" lineHeight="tall">
           Welkom bij de Fanclub Lindemans Aalst! Wij zijn een gepassioneerde
@@ -23,13 +29,24 @@ export default function AboutUs() {
           bij ons ben je altijd welkom.
         </Text>
       </Flex>
-      <Flex mb={4} align="center">
-        <Text fontSize="lg" lineHeight="tall">
+
+      <Flex
+        mb={4}
+        direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
+        align={{ base: "flex-start", md: "center" }} // Align to flex-start on mobile, center on larger screens
+        order={{ base: 2, md: 1 }} // On mobile, this text comes after the image; on desktop, it stays first
+      >
+        <Text
+          fontSize="lg"
+          lineHeight="tall"
+          mb={{ base: 4, md: 0 }}
+          order={{ base: 1, md: 0 }} // On mobile, text first; on desktop, text stays in its place
+        >
           Onze fanclub heeft als doel om de band tussen de club en haar fans te
           versterken. We organiseren regelmatig bijeenkomsten, evenementen en
           activiteiten die niet alleen gericht zijn op het steunen van onze
           favoriete club, maar ook op het versterken van de gemeenschap rondom
-          de club. Van gezellige uitjes om gezamenlijke de wedstrijden bekijken
+          de club. Van gezellige uitjes om gezamenlijk de wedstrijden te kijken
           tot een drankje na de match, we zorgen ervoor dat onze leden zich
           altijd verbonden voelen met Lindemans Aalst.
         </Text>
@@ -38,16 +55,28 @@ export default function AboutUs() {
           alt="Fanclub afbeelding"
           boxSize="200px"
           objectFit="cover"
-          mr={4}
+          mb={{ base: 4, md: 0 }} // Bottom margin on mobile, none on desktop
+          ml={{ base: 0, md: { lg: 3, xl: 3 } }} // Left margin on desktop only (larger screens have more space)
+          mx={{ base: "auto", md: 0 }} // Center image on mobile
+          order={{ base: 2, md: 1 }} // On mobile, image comes after the text; on desktop, image stays in its place
         />
       </Flex>
-      <Flex mb={4} align="center">
+
+      <Flex
+        mb={4}
+        direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
+        align={{ base: "flex-start", md: "center" }} // Align to flex-start on mobile, center on larger screens
+        order={{ base: 1, md: 2 }} // On mobile, this component comes first; on desktop, it stays second
+      >
         <Image
           src="/images/overOns/overOns_3.jpg"
           alt="Fanclub afbeelding"
-          boxSize="175px"
+          boxSize={{base: "60%", md:"30%"}}
           objectFit="cover"
-          mr={4}
+          mb={{ base: 4, md: 0 }} // Bottom margin on mobile, none on desktop
+          mr={{ base: 0, md: { lg: 3, xl: 3 } }} // Right margin on desktop only (larger screens have more space)
+          mx={{ base: "auto", md: 0 }} // Center image on mobile
+          order={{ base: 1, md: 0 }} // On mobile, image first; on desktop, image stays in its place
         />
         <Text fontSize="lg" lineHeight="tall">
           Blijf op de hoogte van al onze activiteiten door ons te volgen op
@@ -55,7 +84,8 @@ export default function AboutUs() {
           hopen je snel te ontmoeten op een van onze evenementen!
         </Text>
       </Flex>
-      <Flex align="center">
+
+      <Flex align="center" justifyContent="center">
         <Text fontSize="lg" fontWeight="bold" color="#f08515">
           Samen maken we elke wedstrijd onvergetelijk!
         </Text>

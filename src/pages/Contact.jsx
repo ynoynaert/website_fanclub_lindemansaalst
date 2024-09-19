@@ -22,9 +22,9 @@ const ContactPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     toast({
-      title: "Bericht verzonden",
-      description: `Je bericht is verzonden naar ${selectedEmail}`,
-      status: "success",
+      title: "Bericht verzonden mislukt",
+      description: `Je bericht is NIET verzonden naar ${selectedEmail}`,
+      status: "error",
       duration: 5000,
       isClosable: true,
     });
