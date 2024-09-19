@@ -56,10 +56,10 @@ const ContactPage = () => {
                 value={selectedEmail}
                 isRequired
               >
-                <option value="lies@fanclubaalst.be">Lies</option>
-                <option value="gino@fanclubaalst.be">Gino</option>
-                <option value="gerrit@fanclubaalst.be">Gerrit</option>
-                <option value="hans@fanclubaalst.be">Hans</option>
+                <option value="lies@fanclubaalst.be">Lies - lies@fanclubaalst.be</option>
+                <option value="gino@fanclubaalst.be">Gino - gino@fanclubaalst.be</option>
+                <option value="gerrit@fanclubaalst.be">Gerrit - gerrit@fanclubaalst.be</option>
+                <option value="hans@fanclubaalst.be">Hans - hans@fanclubaalst.be</option>
               </Select>
             </FormControl>
             <FormControl id="message" isRequired>
