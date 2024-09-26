@@ -42,7 +42,7 @@ export default function Home() {
                   color="white"
                   _hover={{ background: "white", color: "#f08515" }}
                 >
-                  {card.isExternal ? "Meer info" : "Ontdek de winnaars"}
+                  {card.but}
                 </Button>
               </CardBody>
             </Stack>
@@ -61,6 +61,7 @@ const cards = [
       "Op zaterdag 28 en zondag 29 gaat Levensloop door in het stadspark van Aalst. Ook met de (fan)club nemen we hieraan deel.",
     link: "/levensloop",
     imgWidth: { base: "100%", md: "45%" },
+    but: "Meer info",
   },
   {
     image: "/images/home/gouden-kriekskes-afbeelding.jpg",
@@ -69,6 +70,7 @@ const cards = [
       "Jaarlijks sluiten we het seizoen af met de uitreiking van prijzen voor beste speler, beste jongere, meest enthousiaste speler en Lifetime Achievement Award.",
     link: "/goudenkriekskes",
     imgWidth: { base: "100%", md: "45%" },
+    but: "Ontdek de winnaars",
   },
   {
     image: "/images/home/021-2024-mei.jpg",
@@ -77,6 +79,7 @@ const cards = [
       "We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het seizoen verschijnt dit 1 keer per maand.",
     link: "/blocknotjen",
     imgWidth: { base: "50%", md: "25%" },
+    but: "Lees online",
   },
   {
     image: "/images/home/website-lindemans-aalst.png",
@@ -85,6 +88,7 @@ const cards = [
     link: "https://www.lindemansaalst.be",
     isExternal: true,
     imgWidth: { base: "50%", md: "25%" },
+    but: "Meer info",
   },
   {
     image: "/images/home/website-volley-league.png",
@@ -94,6 +98,7 @@ const cards = [
     link: "https://lottovolleyleague.be/nl/",
     isExternal: true,
     imgWidth: { base: "50%", md: "25%" },
+    but: "Meer info",
   },
   {
     image: "/images/home/website-cev.png",
@@ -103,6 +108,7 @@ const cards = [
     link: "https://www.cev.eu/club/volleyball-cup/2025/men/#competition",
     isExternal: true,
     imgWidth: { base: "50%", md: "25%" },
+    but: "Meer info",
   },
   {
     image: "/images/home/clubgeschiedenis.jpg",
@@ -110,5 +116,6 @@ const cards = [
     description: "Lindemans Aalst is een club met een rijke geschiedenis.",
     link: "/clubgeschiedenis",
     imgWidth: { base: "100%", md: "45%" },
+    but: "Lees de geschiedenis",
   },
 ];
