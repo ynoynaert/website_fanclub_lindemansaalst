@@ -1,85 +1,99 @@
-// ContactPage.js
-
-import React, { useState } from "react";
+import React from "react";
 import {
+  Text,
+  Link,
   Box,
-  Container,
   Heading,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-  Button,
-  Select,
-  useToast,
-  VStack,
+  Grid,
+  GridItem,
+  Card,
+  CardBody,
+  Image,
+  Divider,
+  Stack,
 } from "@chakra-ui/react";
 
-const ContactPage = () => {
-  const [selectedEmail, setSelectedEmail] = useState("");
-  const toast = useToast();
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    toast({
-      title: "Bericht verzonden mislukt",
-      description: `Je bericht is NIET verzonden naar ${selectedEmail}`,
-      status: "error",
-      duration: 5000,
-      isClosable: true,
-    });
-  };
-
-  const handleEmailChange = (event) => {
-    setSelectedEmail(event.target.value);
-  };
-
+export default function Contact() {
   return (
-    <Container maxW="container.md" py={10}>
-      <Box textAlign="center" mb={8}>
-        <Heading as="h1" size="xl">
-          Contacteer ons
-        </Heading>
-      </Box>
-      <Box bg="gray.100" p={8} borderRadius="md" shadow="md">
-        <form onSubmit={handleSubmit}>
-          <VStack spacing={4} align="stretch">
-            <FormControl id="name" isRequired>
-              <FormLabel>Naam</FormLabel>
-              <Input placeholder="Voornaam + achternaam" />
-            </FormControl>
-            <FormControl id="email" isRequired>
-              <FormLabel>Selecteer iemand</FormLabel>
-              <Select
-                placeholder="Selecteer iemand"
-                onChange={handleEmailChange}
-                value={selectedEmail}
-                isRequired
-              >
-                <option value="lies@fanclubaalst.be">Lies - lies@fanclubaalst.be</option>
-                <option value="gino@fanclubaalst.be">Gino - gino@fanclubaalst.be</option>
-                <option value="gerrit@fanclubaalst.be">Gerrit - gerrit@fanclubaalst.be</option>
-                <option value="hans@fanclubaalst.be">Hans - hans@fanclubaalst.be</option>
-              </Select>
-            </FormControl>
-            <FormControl id="message" isRequired>
-              <FormLabel>Bericht</FormLabel>
-              <Textarea placeholder="Jouw bericht" />
-            </FormControl>
-            <Button
-              type="submit"
-              color="white"
-              background="#f08515"
-              _hover={{ background: "white", color: "#f08515" }}
-              isDisabled={!selectedEmail}
-            >
-              Verstuur bericht
-            </Button>
-          </VStack>
-        </form>
-      </Box>
-    </Container>
-  );
-};
+    <Box p={4} maxW="container.md" mx="auto">
+      <Heading as="h1" size="lg" mb={4} textAlign="center">
+        Ons team
+      </Heading>
 
-export default ContactPage;
+      <Grid
+        templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} // Adjust grid based on screen size
+        gap={6}
+      >
+        {people.map((p, index) => (
+          <GridItem key={index} w="auto" h="auto">
+            <Card
+              h="auto"
+              maxW="sm"
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+            >
+              <Image
+                src={p.imgSrc}
+                alt={p.imgAlt}
+                borderRadius="lg"
+                boxSize={{ base: "40%", md: "200px" }} // Smaller on mobile, larger on larger screens
+                objectFit="cover"
+              />
+              <CardBody display="flex" flexDirection="column">
+                <Stack spacing="3">
+                  <Heading size="md">{p.naam}</Heading>
+                  <Divider />
+                  <Text>
+                    <Link href={`mailto:${p.email}`} color="#f08515">
+                      {p.email}
+                    </Link>
+                  </Text>
+                  <Text>{p.functie}</Text>
+                </Stack>
+              </CardBody>
+            </Card>
+          </GridItem>
+        ))}
+      </Grid>
+    </Box>
+  );
+}
+
+// size picture 4:5
+const people = [
+  {
+    imgSrc: "/contact/lies.JPG",
+    imgAlt: "Lies",
+    naam: "Lies",
+    functie: "",
+    email: "lies@fanclubaalst.be",
+  },
+  {
+    imgSrc: "/contact/gino.JPG",
+    imgAlt: "Gino",
+    naam: "Gino",
+    functie: "",
+    email: "gino@fanclubaalst.be",
+  },
+  {
+    imgSrc: "/contact/gerrit.JPG",
+    imgAlt: "Gerrit",
+    naam: "Gerrit",
+    functie: "",
+    email: "gerrit@fanclubaalst.be",
+  },
+  {
+    imgSrc: "/contact/hans.JPG",
+    imgAlt: "Hans",
+    naam: "Hans",
+    functie: "",
+    email: "hans@fanclubaalst.be",
+  },
+  {
+    imgSrc: "/contact/youna.JPG",
+    imgAlt: "Youna",
+    naam: "Youna",
+    functie: "Foto's en website",
+    email: "youna@fanclubaalst.be",
+  },
+];
