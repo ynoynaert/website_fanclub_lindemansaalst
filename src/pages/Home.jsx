@@ -12,7 +12,11 @@ import {
 export default function Home() {
   return (
     <Flex direction="column" align="center" justify="center" w="100%" p={4}>
-      <Flex direction="column" w={{ lg: "55%", md: "90%", base:"90%" }} align="center">
+      <Flex
+        direction="column"
+        w={{ lg: "55%", md: "90%", base: "90%" }}
+        align="center"
+      >
         {cards.map((card, index) => (
           <Card
             key={index}
@@ -73,7 +77,7 @@ const cards = [
     but: "Ontdek de winnaars",
   },
   {
-    image: "/images/home/021-2024-mei.jpg",
+    image: "/images/blocknotjen/022-2024-september.jpg",
     title: "'t Blocknotjen",
     description:
       "We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het seizoen verschijnt dit 1 keer per maand.",

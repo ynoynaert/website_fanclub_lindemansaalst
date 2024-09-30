@@ -62,35 +62,35 @@ export default function Contact() {
 // size picture 4:5
 const people = [
   {
-    imgSrc: "/contact/lies.JPG",
+    imgSrc: "/images/contact/lies.JPG",
     imgAlt: "Lies",
     naam: "Lies",
     functie: "",
     email: "lies@fanclubaalst.be",
   },
   {
-    imgSrc: "/contact/gino.JPG",
+    imgSrc: "/images/contact/gino.JPG",
     imgAlt: "Gino",
     naam: "Gino",
     functie: "",
     email: "gino@fanclubaalst.be",
   },
   {
-    imgSrc: "/contact/gerrit.JPG",
+    imgSrc: "/images/contact/gerrit.JPG",
     imgAlt: "Gerrit",
     naam: "Gerrit",
     functie: "",
     email: "gerrit@fanclubaalst.be",
   },
   {
-    imgSrc: "/contact/hans.JPG",
+    imgSrc: "/images/contact/hans.JPG",
     imgAlt: "Hans",
     naam: "Hans",
     functie: "",
     email: "hans@fanclubaalst.be",
   },
   {
-    imgSrc: "/contact/youna.JPG",
+    imgSrc: "/images/contact/youna.JPG",
     imgAlt: "Youna",
     naam: "Youna",
     functie: "Foto's en website",
