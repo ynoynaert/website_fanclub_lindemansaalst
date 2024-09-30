@@ -144,6 +144,11 @@ export default function Blocknotjen() {
 
 const archiveItems = [
   {
+    title: "September 2024",
+    imgSrc: "/blocknotjen/022-2024-september.jpg",
+    pdfLink: "/blocknotjen/022-2024-september.pdf",
+  },
+  {
     title: "Mei 2024",
     imgSrc: "/blocknotjen/021-2024-mei.jpg",
     pdfLink: "/blocknotjen/021-2024-mei.pdf",
