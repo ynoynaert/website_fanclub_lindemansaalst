@@ -100,7 +100,7 @@ export default function Navbar() {
             </Button>
             <Button
               as={Link}
-              href="https://www.facebook.com/fanclub.lindemans.aalst/photos_albums"
+              href="https://www.facebook.com/fanclub.lindemans.aalst/photos"
               isExternal
               background="transparent"
               color="#f08515"
