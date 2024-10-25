@@ -15,6 +15,7 @@ import GoudenKriekskes from "./pages/GoudenKriekskes.jsx";
 import Blocknotjen from "./pages/Blocknotjen.jsx";
 import ClubGeschiedenis from "./pages/Clubgeschiedenis.jsx";
 import Contact from "./pages/Contact.jsx";
+import GratisTickets from "./pages/GratisTickets.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,11 +52,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
-      }
+      },
+      {
+        path: "/gratis",
+        element: <GratisTickets />,
+      },
     ],
   },
 ]);
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
