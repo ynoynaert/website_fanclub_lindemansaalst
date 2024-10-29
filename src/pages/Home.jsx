@@ -58,15 +58,15 @@ export default function Home() {
 }
 
 const cards = [
-  {
-    image: "/images/home/levensloop2024.jpg",
-    title: "Levensloop 2024",
-    description:
-      "Op zaterdag 28 en zondag 29 gaat Levensloop door in het stadspark van Aalst. Ook met de (fan)club nemen we hieraan deel.",
-    link: "/levensloop",
-    imgWidth: { base: "100%", md: "45%" },
-    but: "Meer info",
-  },
+  // {
+  //   image: "/images/home/levensloop2024.jpg",
+  //   title: "Levensloop 2024",
+  //   description:
+  //     "Op zaterdag 28 en zondag 29 gaat Levensloop door in het stadspark van Aalst. Ook met de (fan)club nemen we hieraan deel.",
+  //   link: "/levensloop",
+  //   imgWidth: { base: "100%", md: "45%" },
+  //   but: "Meer info",
+  // },
   {
     image: "/images/home/gouden-kriekskes-afbeelding.jpg",
     title: "Gouden Kriekskes 2024",

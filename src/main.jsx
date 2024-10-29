@@ -33,10 +33,10 @@ const router = createBrowserRouter([
         path: "/overons",
         element: <AboutUs />,
       },
-      {
-        path: "/levensloop",
-        element: <Levensloop />,
-      },
+      // {
+      //   path: "/levensloop",
+      //   element: <Levensloop />,
+      // },
       {
         path: "/goudenkriekskes",
         element: <GoudenKriekskes />,
