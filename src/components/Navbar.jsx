@@ -11,7 +11,11 @@ import {
   VStack,
   IconButton,
 } from "@chakra-ui/react";
-import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io5";
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoYoutube,
+} from "react-icons/io5";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
@@ -25,9 +29,9 @@ export default function Navbar() {
       py={{ base: "2", md: "4", xl: "4" }} // Increased padding for larger screens
       bg="#f9f9f9"
       borderBottom="1px solid #ddd"
-      position="sticky"  // Make navbar sticky
-      top="0"  // Stick to the top
-      zIndex="1000"  // Ensure it sits on top of other content
+      position="sticky" // Make navbar sticky
+      top="0" // Stick to the top
+      zIndex="1000" // Ensure it sits on top of other content
     >
       {/* Mobile, Tablet & Medium Screens Navbar Toggle Button */}
       <Flex
@@ -100,7 +104,7 @@ export default function Navbar() {
             </Button>
             <Button
               as={Link}
-              href="https://www.facebook.com/fanclub.lindemans.aalst/photos"
+              href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
               isExternal
               background="transparent"
               color="#f08515"
@@ -124,6 +128,18 @@ export default function Navbar() {
         {/* Right Button Group */}
         <Flex flex="1" justify="flex-end">
           <ButtonGroup gap="2">
+            <Button
+              background="transparent"
+              color="#f08515"
+              _hover={{ background: "#f08515", color: "white" }}
+            >
+              <Link
+                href="https://www.youtube.com/@FanclubLindemansAalst-ii9qj"
+                isExternal
+              >
+                <Icon as={IoLogoYoutube} />
+              </Link>
+            </Button>
             <Button
               background="transparent"
               color="#f08515"
@@ -208,13 +224,25 @@ export default function Navbar() {
           </Button>
           <Button
             as={Link}
-            href="https://www.facebook.com/fanclub.lindemans.aalst/photos_albums"
+            href="https://www.facebook.com/fanclub.lindemans.aalst/photos/"
             isExternal
             background="transparent"
             color="#f08515"
             _hover={{ background: "#f08515", color: "white" }}
           >
             Foto's
+          </Button>
+          <Button
+            background="transparent"
+            color="#f08515"
+            _hover={{ background: "#f08515", color: "white" }}
+          >
+            <Link
+              href="https://www.youtube.com/@FanclubLindemansAalst-ii9qj"
+              isExternal
+            >
+              <Icon as={IoLogoYoutube} />
+            </Link>
           </Button>
           <Button
             background="transparent"

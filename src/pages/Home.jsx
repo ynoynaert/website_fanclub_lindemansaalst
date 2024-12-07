@@ -77,7 +77,7 @@ const cards = [
     but: "Ontdek de winnaars",
   },
   {
-    image: "/images/blocknotjen/022-2024-september.jpg",
+    image: "/images/blocknotjen/023-2024-december.jpg",
     title: "'t Blocknotjen",
     description:
       "We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het seizoen verschijnt dit 1 keer per maand.",
