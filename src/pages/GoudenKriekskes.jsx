@@ -5,6 +5,7 @@ import {
   Box,
   Heading,
   Stack,
+  Link,
 } from "@chakra-ui/react";
 
 export default function GoudenKriekskes() {
@@ -15,12 +16,26 @@ export default function GoudenKriekskes() {
       </Heading>
       <Stack spacing={4}>
         <Text fontSize="lg" color="gray.700">
-          De fanclub sluit het seizoen af met uitreiking van prijzen beste speler,
-          beste jongere, meest enthousiaste speler en Lifetime Achievement Award.
+          De fanclub sluit het seizoen af met uitreiking van prijzen beste
+          speler, beste jongere, meest enthousiaste speler en Lifetime
+          Achievement Award.
         </Text>
 
         <Text fontSize="lg" color="gray.700">
-          Alle supporters krijgen de kans om te stemmen voor de Gouden Kriekskes.
+          Alle supporters krijgen de kans om te stemmen voor de Gouden
+          Kriekskes.
+        </Text>
+
+        <Text fontSize="lg" color="gray.700">
+          Stem nu op jouw favoriete speler via{" "}
+          <Link
+            isExternal
+            color="#f08515"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeOQpFYM3CChUEvwIh-vjc5xMdrb-mozYd_1tBykHvBMADUeg/viewform"
+          >
+            deze link
+          </Link>
+          !
         </Text>
 
         <Text fontSize="lg" color="gray.700">

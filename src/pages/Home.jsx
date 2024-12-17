@@ -69,12 +69,12 @@ const cards = [
   // },
   {
     image: "/images/home/gouden-kriekskes-afbeelding.jpg",
-    title: "Gouden Kriekskes 2024",
+    title: "Gouden Kriekskes 2025",
     description:
       "Jaarlijks sluiten we het seizoen af met de uitreiking van prijzen voor beste speler, beste jongere, meest enthousiaste speler en Lifetime Achievement Award.",
     link: "/goudenkriekskes",
     imgWidth: { base: "100%", md: "45%" },
-    but: "Ontdek de winnaars",
+    but: "Stem nu!",
   },
   {
     image: "/images/blocknotjen/023-2024-december.jpg",
