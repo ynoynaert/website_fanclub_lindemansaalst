@@ -16,6 +16,7 @@ import Blocknotjen from "./pages/Blocknotjen.jsx";
 import ClubGeschiedenis from "./pages/Clubgeschiedenis.jsx";
 import Contact from "./pages/Contact.jsx";
 import GratisTickets from "./pages/GratisTickets.jsx";
+import Weekend from "./pages/Weekend.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       //   path: "/levensloop",
       //   element: <Levensloop />,
       // },
+      {
+        path: "/weekend",
+        element: <Weekend />,
+      },
       {
         path: "/goudenkriekskes",
         element: <GoudenKriekskes />,

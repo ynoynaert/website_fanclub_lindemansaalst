@@ -68,16 +68,25 @@ const cards = [
   //   but: "Meer info",
   // },
   {
+    image: "/images/home/weekendBENE.jpg",
+    title: "Weekend BENE-League",
+    description: "Ook dit seizoen organiseren we weer een gezellig weekendje weg! Dit keer verruilen we Maaseik voor het mooie Doetinchem. Op 8 en 9 maart trekken we eropuit om samen een geweldig weekend te beleven. Wees er snel bij want de plaatsen zijn beperkt!",
+    link: "/weekend",
+    imgWidth: { base: "50%", md: "25%" },
+    but: "Schrijf je in!",
+  },
+  {
     image: "/images/home/gouden-kriekskes-afbeelding.jpg",
     title: "Gouden Kriekskes 2025",
     description:
       "Jaarlijks sluiten we het seizoen af met de uitreiking van prijzen voor beste speler, beste jongere, meest enthousiaste speler en Lifetime Achievement Award.",
     link: "/goudenkriekskes",
     imgWidth: { base: "100%", md: "45%" },
-    but: "Stem nu!",
+    // but: "Stem nu!",
+    but: "Ontdek de winnaars",
   },
   {
-    image: "/images/blocknotjen/023-2024-december.jpg",
+    image: "/images/blocknotjen/024-2025-februari.jpg",
     title: "'t Blocknotjen",
     description:
       "We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het seizoen verschijnt dit 1 keer per maand.",

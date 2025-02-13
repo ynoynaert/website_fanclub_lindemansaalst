@@ -26,7 +26,7 @@ export default function GoudenKriekskes() {
           Kriekskes.
         </Text>
 
-        <Text fontSize="lg" color="gray.700">
+        {/* <Text fontSize="lg" color="gray.700">
           Stem nu op jouw favoriete speler via{" "}
           <Link
             isExternal
@@ -36,7 +36,7 @@ export default function GoudenKriekskes() {
             deze link
           </Link>
           !
-        </Text>
+        </Text> */}
 
         <Text fontSize="lg" color="gray.700">
           Winnaars van deze awards...

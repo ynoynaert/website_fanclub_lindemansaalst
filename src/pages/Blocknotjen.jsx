@@ -17,6 +17,9 @@ export default function Blocknotjen() {
   return (
     <>
       <Box p={4} maxW="container.md" mx="auto">
+        <Heading as="h1" size="lg" mb={4} textAlign="center">
+          Ledenblad 't Blocknotjen
+        </Heading>
         <Flex
           direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
           align="center"
@@ -24,15 +27,6 @@ export default function Blocknotjen() {
           gap={{ base: 4, md: 8 }} // Add spacing between the elements
         >
           <Box flex="1">
-            <Heading
-              as="h1"
-              size="lg"
-              mb={4}
-              textAlign={{ base: "center", md: "left" }}
-            >
-              Ledenblad 't Blocknotjen
-            </Heading>
-
             <Text mb={4}>
               We hebben ook een eigen ledenblad: 't Blocknotjen. Tijdens het
               seizoen verschijnt dit 1 keer per maand.
@@ -82,7 +76,7 @@ export default function Blocknotjen() {
               <Card
                 h={{ base: "auto", md: "auto" }} // Set height for larger screens
                 maxW={{ base: "100%", sm: "sm", md: "md", lg: "lg" }} // Set maximum width responsively
-                mx={{ base: "auto", md: 0 }} 
+                mx={{ base: "auto", md: 0 }}
               >
                 <CardBody
                   display="flex"
@@ -143,6 +137,11 @@ export default function Blocknotjen() {
 }
 
 const archiveItems = [
+  {
+    title: "Februari 2025",
+    imgSrc: "/images/blocknotjen/024-2025-februari.jpg",
+    pdfLink: "/images/blocknotjen/024-2025-februari.pdf",
+  },
   {
     title: "December 2024",
     imgSrc: "/images/blocknotjen/023-2024-december.jpg",
