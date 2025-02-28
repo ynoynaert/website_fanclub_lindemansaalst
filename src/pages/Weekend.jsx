@@ -57,7 +57,7 @@ export default function Weekend() {
           </Text>
         </Box>
         <Box flex="1">
-          <Image src="/public/images/home/weekendBENE.jpg" />
+          <Image src="/images/home/weekendBENE.jpg" />
         </Box>
       </Flex>
     </Box>
