@@ -23,7 +23,7 @@ export default function Home() {
             direction={{ base: "column", md: "row" }} // Stacks vertically on mobile and horizontally on desktop
             overflow="hidden"
             variant="outline"
-            m={2} // Margin between cards
+            m={2}
           >
             <Image
               src={card.image}
@@ -67,14 +67,14 @@ const cards = [
   //   imgWidth: { base: "100%", md: "45%" },
   //   but: "Meer info",
   // },
-  {
-    image: "/images/home/weekendBENE.jpg",
-    title: "Weekend BENE-League",
-    description: "Ook dit seizoen organiseren we weer een gezellig weekendje weg! Dit keer verruilen we Maaseik voor het mooie Doetinchem. Op 8 en 9 maart trekken we eropuit om samen een geweldig weekend te beleven. Wees er snel bij want de plaatsen zijn beperkt!",
-    link: "/weekend",
-    imgWidth: { base: "50%", md: "25%" },
-    but: "Schrijf je in!",
-  },
+  // {
+  //   image: "/images/home/weekendBENE.jpg",
+  //   title: "Weekend BENE-League",
+  //   description: "Ook dit seizoen organiseren we weer een gezellig weekendje weg! Dit keer verruilen we Maaseik voor het mooie Doetinchem. Op 8 en 9 maart trekken we eropuit om samen een geweldig weekend te beleven. Wees er snel bij want de plaatsen zijn beperkt!",
+  //   link: "/weekend",
+  //   imgWidth: { base: "50%", md: "25%" },
+  //   but: "Schrijf je in!",
+  // },
   {
     image: "/images/home/gouden-kriekskes-afbeelding.jpg",
     title: "Gouden Kriekskes 2025",

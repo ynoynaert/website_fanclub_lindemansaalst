@@ -10,12 +10,13 @@ import {
 import Layout from "./components/Layout";
 import Home from "./pages/Home.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
-import Levensloop from "./pages/Levensloop.jsx";
 import GoudenKriekskes from "./pages/GoudenKriekskes.jsx";
 import Blocknotjen from "./pages/Blocknotjen.jsx";
 import ClubGeschiedenis from "./pages/Clubgeschiedenis.jsx";
 import Contact from "./pages/Contact.jsx";
+import NotFound from "./components/NotFound.jsx";
 import GratisTickets from "./pages/GratisTickets.jsx";
+import Levensloop from "./pages/Levensloop.jsx";
 import Weekend from "./pages/Weekend.jsx";
 
 const router = createBrowserRouter([
@@ -34,14 +35,6 @@ const router = createBrowserRouter([
         path: "/overons",
         element: <AboutUs />,
       },
-      // {
-      //   path: "/levensloop",
-      //   element: <Levensloop />,
-      // },
-      {
-        path: "/weekend",
-        element: <Weekend />,
-      },
       {
         path: "/goudenkriekskes",
         element: <GoudenKriekskes />,
@@ -59,9 +52,21 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/gratis",
-        element: <GratisTickets />,
+        path: "*",
+        element: <NotFound />,
       },
+      // {
+      //   path: "/levensloop",
+      //   element: <Levensloop />,
+      // },
+      // {
+      //   path: "/weekend",
+      //   element: <Weekend />,
+      // },
+      // {
+      //   path: "/gratis",
+      //   element: <GratisTickets />,
+      // },
     ],
   },
 ]);
