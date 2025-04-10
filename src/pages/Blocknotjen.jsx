@@ -138,6 +138,11 @@ export default function Blocknotjen() {
 
 const archiveItems = [
   {
+    title: "April 2025",
+    imgSrc: "/images/blocknotjen/025-2025-april.jpg",
+    pdfLink: "/images/blocknotjen/025-2025-april.pdf",
+  },
+  {
     title: "Februari 2025",
     imgSrc: "/images/blocknotjen/024-2025-februari.jpg",
     pdfLink: "/images/blocknotjen/024-2025-februari.pdf",

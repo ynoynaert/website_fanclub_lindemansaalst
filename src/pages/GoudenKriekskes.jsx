@@ -26,17 +26,17 @@ export default function GoudenKriekskes() {
           Kriekskes.
         </Text>
 
-        {/* <Text fontSize="lg" color="gray.700">
+        <Text fontSize="lg" color="gray.700">
           Stem nu op jouw favoriete speler via{" "}
           <Link
             isExternal
             color="#f08515"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeOQpFYM3CChUEvwIh-vjc5xMdrb-mozYd_1tBykHvBMADUeg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeOQpFYM3CChUEvwIh-vjc5xMdrb-mozYd_1tBykHvBMADUeg/viewform "
           >
             deze link
           </Link>
           !
-        </Text> */}
+        </Text>
 
         <Text fontSize="lg" color="gray.700">
           Winnaars van deze awards...
