@@ -82,8 +82,8 @@ const cards = [
       "Jaarlijks sluiten we het seizoen af met de uitreiking van prijzen voor beste speler, beste jongere, meest enthousiaste speler en Lifetime Achievement Award.",
     link: "/goudenkriekskes",
     imgWidth: { base: "100%", md: "45%" },
-    but: "Stem nu!",
-    //but: "Ontdek de winnaars",
+    //but: "Stem nu!",
+    but: "Ontdek de winnaars",
   },
   {
     image: "/images/blocknotjen/025-2025-april.jpg",

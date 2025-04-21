@@ -5,6 +5,8 @@ import {
   Box,
   Heading,
   Stack,
+  Image,
+  Flex,
   Link,
 } from "@chakra-ui/react";
 
@@ -14,19 +16,26 @@ export default function GoudenKriekskes() {
       <Heading as="h2" size="lg" mb={4} textAlign="center">
         Gouden Kriekskes Awards
       </Heading>
-      <Stack spacing={4}>
-        <Text fontSize="lg" color="gray.700">
-          De fanclub sluit het seizoen af met uitreiking van prijzen beste
-          speler, beste jongere, meest enthousiaste speler en Lifetime
-          Achievement Award.
-        </Text>
 
-        <Text fontSize="lg" color="gray.700">
-          Alle supporters krijgen de kans om te stemmen voor de Gouden
-          Kriekskes.
-        </Text>
+      <Flex
+        mb={4}
+        direction={{ base: "column", md: "row" }} // Stack vertically on mobile, row on larger screens
+        align={{ base: "flex-start", md: "center" }} // Align to flex-start on mobile, center on larger screens
+      >
+        <Stack spacing={4}>
+          <Text fontSize="lg" color="gray.700">
+            De fanclub sluit het seizoen af met uitreiking van prijzen beste
+            speler, beste jongere, meest enthousiaste speler en Lifetime
+            Achievement Award.
+          </Text>
 
-        <Text fontSize="lg" color="gray.700">
+          <Text fontSize="lg" color="gray.700">
+            Alle supporters krijgen de kans om te stemmen voor de Gouden
+            Kriekskes.
+          </Text>
+
+          
+        {/* <Text fontSize="lg" color="gray.700">
           Stem nu op jouw favoriete speler via{" "}
           <Link
             isExternal
@@ -36,8 +45,20 @@ export default function GoudenKriekskes() {
             deze link
           </Link>
           !
-        </Text>
+        </Text> */}
+        </Stack>
+        <Image
+          src="/images/goudenKriekskes.jpg"
+          alt="Gouden Kriekskes afbeelding"
+          boxSize={{base: "70%", md:"35%"}}
+          objectFit="cover"
+          mb={{ base: 4, md: 0 }} // Bottom margin on mobile, none on desktop
+          mr={{ base: 0, md: { lg: 3, xl: 3 } }} // Right margin on desktop only (larger screens have more space)
+          mx={{ base: "auto", md: 0 }} // Center image on mobile
+        />
+      </Flex>
 
+      <Stack spacing={4}>
         <Text fontSize="lg" color="gray.700">
           Winnaars van deze awards...
         </Text>
@@ -47,6 +68,7 @@ export default function GoudenKriekskes() {
             Lifetime Achievement Award
           </Heading>
           <UnorderedList styleType="disc" ml={4}>
+            <ListItem>2025: ??? </ListItem>
             <ListItem>2024: Geert Walravens</ListItem>
             <ListItem>2023: Staf Moyson</ListItem>
             <ListItem>2022: Johan Devoghel</ListItem>
@@ -58,6 +80,7 @@ export default function GoudenKriekskes() {
             Beste speler
           </Heading>
           <UnorderedList styleType="disc" ml={4}>
+            <ListItem>2025: Alvaro Gimeno Rubio</ListItem>
             <ListItem>2024: Alvaro Gimeno Rubio</ListItem>
             <ListItem>2023: Robbe Van de Velde</ListItem>
             <ListItem>2022: Robin Overbeeke</ListItem>
@@ -69,6 +92,7 @@ export default function GoudenKriekskes() {
             Meest enthousiaste speler
           </Heading>
           <UnorderedList styleType="disc" ml={4}>
+            <ListItem>2025: Robbe Ponseele</ListItem>
             <ListItem>2024: Robbe Ponseele</ListItem>
             <ListItem>2023: Renars-Pauls Jansons</ListItem>
             <ListItem>2022: Renars-Pauls Jansons</ListItem>
@@ -80,6 +104,7 @@ export default function GoudenKriekskes() {
             Beste jongere (jonger dan 21 op het einde van het seizoen)
           </Heading>
           <UnorderedList styleType="disc" ml={4}>
+            <ListItem>2025: Matis Verwimp</ListItem>
             <ListItem>2024: Robbe Van de Velde</ListItem>
             <ListItem>2023: Robbe Van de Velde</ListItem>
             <ListItem>2022: Robbe Van de Velde</ListItem>
